@@ -267,3 +267,92 @@ footer {
   }
 
 }
+/* ABOUT HERO (centered) */
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 38px;
+  color: #0d47a1;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #555;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* SPLIT TEXT IMPROVEMENT */
+.split-text {
+  max-width: 500px;
+}
+
+.split-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.split-text p {
+  color: #555;
+  line-height: 1.7;
+}
+
+/* TEAM SECTION */
+.team {
+  text-align: center;
+  padding: 80px 60px;
+}
+
+.team h1 {
+  font-size: 32px;
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+.team p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* TEAM CARDS (reuse testimonial style but improved) */
+.test-card {
+  transition: 0.3s;
+}
+
+.test-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+/* CTA TEXT FIX */
+.cta-text h1 {
+  font-size: 32px;
+}
+
+.cta-text p {
+  margin-top: 10px;
+}
+
+/* IMAGE RESPONSIVE FIX */
+.split-img img {
+  max-width: 100%;
+}
+
+/* MOBILE IMPROVEMENTS */
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .split-text h2 {
+    font-size: 22px;
+  }
+
+  .team {
+    padding: 40px 20px;
+  }
+
+}
