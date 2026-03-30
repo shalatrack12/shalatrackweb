@@ -1,107 +1,149 @@
-body {
+/* RESET */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  background: #14002b;
-  color: white;
+}
+
+body {
+  background: #f5f9ff;
+  color: #333;
+  line-height: 1.6;
 }
 
 /* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 60px;
   align-items: center;
+  padding: 20px 60px;
+  background: white;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.logo-blue {
+  color: #1565c0;
+}
+
+.logo-green {
+  color: #2e7d32;
 }
 
 .navbar nav a {
-  margin: 0 15px;
+  margin-left: 25px;
   text-decoration: none;
-  color: white;
+  color: #444;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #1565c0;
 }
 
 /* BUTTON */
 .btn {
-  background: linear-gradient(45deg, #7c3aed, #a855f7);
+  padding: 12px 24px;
   border: none;
-  padding: 12px 25px;
-  border-radius: 30px;
+  border-radius: 8px;
+  background: #1565c0;
   color: white;
   cursor: pointer;
-}
-.logo {
-  font-size: 22px;
-  font-weight: bold;
+  transition: 0.3s;
 }
 
-.logo-blue {
-  color: #2b2aa7;  /* blue */
+.btn:hover {
+  background: #0d47a1;
+  transform: translateY(-2px);
 }
 
-.logo-green {
-  color: #6bbf4a;  /* green */
+.btn.secondary {
+  background: #e3f2fd;
+  color: #1565c0;
 }
+
 /* HERO */
 .hero {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 80px 60px;
+  animation: fadeUp 1s ease;
 }
 
-.hero h1 {
-  font-size: 55px;
+.hero-left h1 {
+  font-size: 42px;
+  color: #0d47a1;
+  margin-bottom: 20px;
 }
 
-.hero p {
-  color: #cbd5e1;
-  margin: 20px 0;
+.hero-left p {
+  margin-bottom: 25px;
+  color: #555;
 }
 
-.hero img {
-  width: 350px;
-  transform: rotate(-10deg);
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.hero-right img {
+  width: 450px;
+  animation: float 3s ease-in-out infinite;
 }
 
 /* SPLIT SECTIONS */
 .split {
   display: flex;
   align-items: center;
-  padding: 80px 60px;
+  justify-content: space-between;
+  padding: 60px;
+  gap: 40px;
 }
 
 .split.reverse {
   flex-direction: row-reverse;
 }
 
-.split img {
-  width: 300px;
+.split-img img {
+  width: 400px;
   border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-.split-text {
-  max-width: 400px;
-  margin-left: 50px;
+.split-text h2 {
+  color: #0d47a1;
+  margin-bottom: 15px;
 }
 
 /* TESTIMONIAL */
 .testimonial {
-  padding: 80px 60px;
-  background: #1e0a3c;
+  padding: 60px;
   text-align: center;
 }
 
 .test-grid {
   display: flex;
+  gap: 20px;
   justify-content: center;
-  gap: 30px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .test-card {
-  background: #2a0f4d;
-  padding: 20px;
+  background: white;
+  padding: 25px;
   border-radius: 15px;
-  width: 300px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  max-width: 300px;
 }
 
 /* STATS */
@@ -109,138 +151,119 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 60px;
+  background: #e3f2fd;
   text-align: center;
 }
 
 .stats h1 {
-  font-size: 40px;
+  color: #1565c0;
 }
 
 /* CTA */
 .cta {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 80px 60px;
-  background: #1e0a3c;
+  justify-content: space-between;
+  padding: 60px;
+  background: #1565c0;
+  color: white;
 }
 
 .cta img {
-  width: 250px;
+  width: 300px;
+}
+
+.cta .btn {
+  margin-top: 20px;
+  background: white;
+  color: #1565c0;
 }
 
 /* FOOTER */
 footer {
-  text-align: center;
-  padding: 30px;
-  background: #000;
-}
-/* PRICING SECTION */
-.pricing {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 80px 60px;
-  flex-wrap: wrap;
-}
-
-.pricing-card {
-  background: #1e0a3c;
-  padding: 30px;
-  border-radius: 20px;
-  width: 280px;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.pricing-card:hover {
-  transform: translateY(-10px);
-}
-
-.pricing-card h1 {
-  font-size: 40px;
-  margin: 10px 0;
-}
-
-.pricing-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-}
-
-.pricing-card ul li {
-  margin: 10px 0;
-  color: #cbd5e1;
-}
-
-.highlight {
-  border: 2px solid #a855f7;
-  transform: scale(1.05);
-}
-/* TEAM */
-.team {
-  background: #1e0a3c;
-}
-/* FORM FIX - CLEAN STACKED INPUTS */
-
-.contact-form-box form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form-box input,
-.contact-form-box textarea {
-  width: 100%;
-  padding: 14px;
-  margin-bottom: 15px;  /* spacing between fields */
-  border: none;
-  border-radius: 12px;
-  background: #2a0f4d;
+  background: #0d47a1;
   color: white;
-  font-size: 14px;
-  outline: none;
-}
-
-/* Placeholder color */
-.contact-form-box input::placeholder,
-.contact-form-box textarea::placeholder {
-  color: #cbd5e1;
-}
-
-/* Focus effect (premium feel) */
-.contact-form-box input:focus,
-.contact-form-box textarea:focus {
-  border: 1px solid #a855f7;
-  background: #32145f;
-}
-
-/* Button full width */
-#submit-btn {
-  width: 100%;
-  margin-top: 10px;
-  padding: 14px;
-  border-radius: 25px;
-  font-size: 15px;
-}
-/* FULL HEIGHT LAYOUT */
-html, body {
-  height: 100%;
-}
-
-/* MAKE BODY FLEX */
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-/* MAIN CONTENT TAKES SPACE */
-.contact-section {
-  flex: 1;
-}
-
-/* FOOTER ALWAYS AT BOTTOM */
-footer {
   text-align: center;
   padding: 30px;
-  background: #000;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .hero, .split, .cta {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-right img,
+  .split-img img,
+  .cta img {
+    width: 80%;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar nav {
+    display: none;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero-left h1 {
+    font-size: 28px;
+  }
+
+  .split {
+    padding: 40px 20px;
+  }
+
+  .testimonial {
+    padding: 40px 20px;
+  }
+
+  .test-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats {
+    padding: 40px 20px;
+  }
+
+  .cta {
+    padding: 40px 20px;
+  }
+
 }
