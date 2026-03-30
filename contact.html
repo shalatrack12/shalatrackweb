@@ -3,103 +3,99 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact ShalaTrack</title>
+<title>Contact - ShalaTrack</title>
 
-
- <link rel="stylesheet" href="css/styles.css"></head>
-
-
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <header class="navbar">
+  <div class="logo">
+    <span class="logo-blue">SHALA</span>
+    <span class="logo-green">TRACK</span>
+  </div>
 
-<div class="logo-container">
-<a href="index.html">
-<img src="images/logo.png" alt="ShalaTrack Logo" class="main-logo">
-</a>
-</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="pricing.html">Pricing</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
-
-<button class="btn">Get Started</button>
-
+  <button class="btn">Get Demo</button>
 </header>
 
+<!-- HERO -->
+<section class="hero" style="flex-direction:column; text-align:center;">
+  <h1>Let’s Work Together</h1>
+  <p>We’ll help you digitize your school in minutes 🚀</p>
+</section>
 
+<!-- CONTACT -->
 <section class="contact-section">
 
-<h1>Contact Us</h1>
+  <div class="contact-box">
 
-<p class="tagline">
-Let’s help you digitize your school 🚀
-</p>
+    <!-- LEFT -->
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
 
-<div class="contact-box">
+      <p>📧 shalatrack@gmail.com</p>
+      <p>📱 +91 6309542241</p>
+      <p>We usually reply within a few hours.</p>
 
-<!-- LEFT -->
-<div class="contact-info">
-  <h2>Get in Touch</h2>
+      <!-- 🔥 WhatsApp CTA -->
+      <a href="https://wa.me/916309542241" target="_blank" class="btn">
+        Chat on WhatsApp
+      </a>
+    </div>
 
-  <p>📧 shalatrack@gmail.com</p>
+    <!-- RIGHT -->
+    <div class="contact-form-box">
 
-  <p>📱 +91 6309542241</p>
+      <!-- SUCCESS -->
+      <div id="success-message" style="display:none; text-align:center;">
+        <div class="success-icon">✅</div>
+        <h3>Message Sent Successfully!</h3>
+        <p>Our team will contact you soon.</p>
+        <a href="index.html" class="btn">Go Home</a>
+      </div>
 
-  <p>We usually reply within a few hours.</p>
-</div>
+      <!-- FORM -->
+      <form id="contact-form"
+      action="https://formspree.io/f/mykngyad"
+      method="POST">
 
-<!-- RIGHT -->
-<div class="contact-form-box">
+        <input type="text" name="name" placeholder="Your Name" required>
 
-<div id="success-message" style="display:none; text-align:center;">
+        <input type="email" name="email" placeholder="Your Email" required>
 
-<div class="success-icon">✅</div>
+        <textarea name="message" placeholder="Message" required></textarea>
 
-<h3>Message Sent Successfully!</h3>
+        <button type="submit" id="submit-btn" class="btn">
+          Send Message
+        </button>
 
-<p>Our team will contact you soon.</p>
+      </form>
 
-<a href="index.html" class="btn">Go Home</a>
+    </div>
 
-</div>
-
-
-<form id="contact-form"
-action="https://formspree.io/f/mykngyad"
-method="POST">
-
-<input type="text" name="name" placeholder="Your Name" required>
-
-<input type="email" name="email" placeholder="Your Email" required>
-
-<textarea name="message" placeholder="Message" required></textarea>
-
-<button type="submit" id="submit-btn">
-Send Message
-</button>
-
-</form>
-
-</div>
-
-</div>
+  </div>
 
 </section>
 
-
+<!-- FOOTER -->
 <footer>
-<p>© 2026 ShalaTrack Technologies Pvt Ltd</p>
+  <h3>ShalaTrack</h3>
+  <p>Smart School Management System</p>
 </footer>
 
-
+<!-- SCRIPT -->
 <script>
-
 const form = document.getElementById('contact-form');
 const successMsg = document.getElementById('success-message');
 const submitBtn = document.getElementById('submit-btn');
@@ -115,9 +111,7 @@ const data = new FormData(event.target);
 fetch(event.target.action, {
 method: form.method,
 body: data,
-headers: {
-'Accept': 'application/json'
-}
+headers: { 'Accept': 'application/json' }
 
 }).then(response => {
 
@@ -137,7 +131,6 @@ submitBtn.disabled = false;
 });
 
 });
-
 </script>
 
 </body>
