@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #14002b;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  align-items: center;
+}
+
+.navbar nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+}
+
+/* BUTTON */
+.btn {
+  background: linear-gradient(45deg, #7c3aed, #a855f7);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+}
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo-blue {
+  color: #2b2aa7;  /* blue */
+}
+
+.logo-green {
+  color: #6bbf4a;  /* green */
+}
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+}
+
+.hero h1 {
+  font-size: 55px;
+}
+
+.hero p {
+  color: #cbd5e1;
+  margin: 20px 0;
+}
+
+.hero img {
+  width: 350px;
+  transform: rotate(-10deg);
+}
+
+/* SPLIT SECTIONS */
+.split {
+  display: flex;
+  align-items: center;
+  padding: 80px 60px;
+}
+
+.split.reverse {
+  flex-direction: row-reverse;
+}
+
+.split img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+.split-text {
+  max-width: 400px;
+  margin-left: 50px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  padding: 80px 60px;
+  background: #1e0a3c;
+  text-align: center;
+}
+
+.test-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.test-card {
+  background: #2a0f4d;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+  text-align: center;
+}
+
+.stats h1 {
+  font-size: 40px;
+}
+
+/* CTA */
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  background: #1e0a3c;
+}
+
+.cta img {
+  width: 250px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #000;
+}
+/* PRICING SECTION */
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 80px 60px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background: #1e0a3c;
+  padding: 30px;
+  border-radius: 20px;
+  width: 280px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+}
+
+.pricing-card h1 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pricing-card ul li {
+  margin: 10px 0;
+  color: #cbd5e1;
+}
+
+.highlight {
+  border: 2px solid #a855f7;
+  transform: scale(1.05);
+}
+/* TEAM */
+.team {
+  background: #1e0a3c;
+}
+/* FORM FIX - CLEAN STACKED INPUTS */
+
+.contact-form-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;  /* spacing between fields */
+  border: none;
+  border-radius: 12px;
+  background: #2a0f4d;
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Placeholder color */
+.contact-form-box input::placeholder,
+.contact-form-box textarea::placeholder {
+  color: #cbd5e1;
+}
+
+/* Focus effect (premium feel) */
+.contact-form-box input:focus,
+.contact-form-box textarea:focus {
+  border: 1px solid #a855f7;
+  background: #32145f;
+}
+
+/* Button full width */
+#submit-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 25px;
+  font-size: 15px;
+}
+/* FULL HEIGHT LAYOUT */
+html, body {
+  height: 100%;
+}
+
+/* MAKE BODY FLEX */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* MAIN CONTENT TAKES SPACE */
+.contact-section {
+  flex: 1;
+}
+
+/* FOOTER ALWAYS AT BOTTOM */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #000;
+}
