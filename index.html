@@ -13,12 +13,16 @@
 
 <!-- NAVBAR -->
 <header class="navbar">
+
   <div class="logo">
     <span class="logo-blue">SHALA</span>
     <span class="logo-green">TRACK</span>
   </div>
 
-  <nav>
+  <!-- ☰ HAMBURGER -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav id="nav-links">
     <a href="index.html">Home</a>
     <a href="features.html">Features</a>
     <a href="pricing.html">Pricing</a>
@@ -26,8 +30,8 @@
     <a href="about.html">About</a>
   </nav>
 
-  <!-- REDIRECT BUTTON -->
   <a href="contact.html#contact-form" class="btn">Get Demo</a>
+
 </header>
 
 <!-- HERO -->
@@ -75,9 +79,6 @@
 </section>
 
 <section class="split">
-  <div class="split-img">
-  
-  </div>
   <div class="split-text">
     <h2>Setup schools in seconds</h2>
     <p>
@@ -87,9 +88,6 @@
 </section>
 
 <section class="split reverse">
-  <div class="split-img">
-   
-  </div>
   <div class="split-text">
     <h2>Built for teachers</h2>
     <p>
@@ -140,8 +138,6 @@
     <p>Book a free demo and see ShalaTrack in action.</p>
     <a href="contact.html#contact-form" class="btn">Get Free Demo</a>
   </div>
-
-
 </section>
 
 <!-- FOOTER -->
@@ -151,6 +147,14 @@
     <p>"Smart attendance -made easy"</p>
   </div>
 </footer>
+
+<!-- SCRIPT -->
+<script>
+function toggleMenu() {
+  const nav = document.getElementById("nav-links");
+  nav.classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
