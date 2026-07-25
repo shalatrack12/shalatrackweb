@@ -1,119 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Privacy Policy | SHALATRACK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Privacy Policy | SHALATRACK</title>
+    <link rel="stylesheet" href="styles.css">
 
-<style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
-}
+    <style>
 
-body{
-    background:#f5f7fb;
-    color:#333;
-    line-height:1.8;
-}
+        body{
+            background:#f7f9fc;
+        }
 
-header{
-    background:#1e73d8;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
-}
+        .policy-header{
+            background:linear-gradient(135deg,#1e73d8,#4fa3ff);
+            color:white;
+            text-align:center;
+            padding:80px 20px;
+        }
 
-header h1{
-    font-size:42px;
-    margin-bottom:10px;
-}
+        .policy-header h1{
+            font-size:48px;
+            margin-bottom:10px;
+        }
 
-header p{
-    font-size:18px;
-}
+        .policy-header p{
+            font-size:18px;
+            opacity:.95;
+        }
 
-.container{
-    max-width:950px;
-    margin:40px auto;
-    background:white;
-    padding:40px;
-    border-radius:15px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
+        .policy-container{
 
-h2{
-    color:#1e73d8;
-    margin-top:30px;
-    margin-bottom:15px;
-}
+            max-width:1000px;
+            margin:50px auto;
+            background:white;
+            border-radius:15px;
+            box-shadow:0 10px 30px rgba(0,0,0,.08);
+            padding:50px;
 
-p{
-    margin-bottom:15px;
-}
+        }
 
-ul{
-    padding-left:20px;
-    margin-bottom:20px;
-}
+        .policy-container h2{
 
-footer{
-    background:#1e73d8;
-    color:white;
-    text-align:center;
-    padding:25px;
-    margin-top:50px;
-}
+            color:#1e73d8;
+            margin-top:35px;
+            margin-bottom:15px;
 
-a{
-    color:#1e73d8;
-    text-decoration:none;
-}
+        }
 
-@media(max-width:768px){
+        .policy-container p{
 
-.container{
-margin:20px;
-padding:25px;
-}
+            line-height:1.8;
+            color:#555;
+            margin-bottom:18px;
 
-header h1{
-font-size:32px;
-}
+        }
 
-}
+        .policy-container ul{
 
-</style>
+            margin-left:25px;
+            margin-bottom:25px;
+
+        }
+
+        .policy-container li{
+
+            margin-bottom:10px;
+            color:#555;
+
+        }
+
+        .effective{
+
+            background:#eef6ff;
+            padding:15px;
+            border-left:5px solid #1e73d8;
+            border-radius:8px;
+            margin-bottom:30px;
+
+        }
+
+        .contact-box{
+
+            background:#f8fbff;
+            border-radius:10px;
+            padding:25px;
+            margin-top:25px;
+
+        }
+
+        .contact-box a{
+
+            color:#1e73d8;
+            text-decoration:none;
+
+        }
+
+        .footer-links{
+
+            margin-top:20px;
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrap:wrap;
+
+        }
+
+        .footer-links a{
+
+            color:white;
+            text-decoration:none;
+
+        }
+
+        .footer-links a:hover{
+
+            text-decoration:underline;
+
+        }
+
+        @media(max-width:768px){
+
+            .policy-header h1{
+
+                font-size:34px;
+
+            }
+
+            .policy-container{
+
+                margin:20px;
+                padding:25px;
+
+            }
+
+        }
+
+    </style>
 
 </head>
 
 <body>
 
-<header>
+<!-- NAVBAR -->
 
-<h1>Privacy Policy</h1>
+<header class="navbar">
 
-<p>SHALATRACK School ERP System</p>
+    <div class="logo">
+
+        <span class="logo-blue">SHALA</span>
+        <span class="logo-green">TRACK</span>
+
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+
+    </nav>
+
+    <a href="contact.html#contact-form" class="btn">
+        Get Demo
+    </a>
 
 </header>
 
-<div class="container">
+<!-- HERO -->
 
-<p><strong>Effective Date:</strong> 24 July 2026</p>
+<section class="policy-header">
+
+    <h1>Privacy Policy</h1>
+
+    <p>
+        SHALATRACK School ERP System
+    </p>
+
+</section>
+
+<!-- CONTENT -->
+
+<div class="policy-container">
+
+<div class="effective">
+
+<strong>Effective Date:</strong> 24 July 2026
+
+</div>
 
 <p>
+
 SHALATRACK ("we", "our", or "us") is committed to protecting the privacy
-of schools, administrators, teachers, students, and other users of our
+of schools, administrators, teachers, students, and all users of our
 School ERP platform.
+
 </p>
 
 <h2>1. Information We Collect</h2>
 
-<p>We may collect the following information:</p>
+<p>
+
+We may collect the following information while using SHALATRACK:
+
+</p>
 
 <ul>
 
@@ -127,25 +227,31 @@ School ERP platform.
 
 <li>Attendance Records</li>
 
-<li>Email Address</li>
+<li>Email Addresses</li>
 
 <li>Authentication Information</li>
 
 </ul>
 
-<h2>2. How We Use Information</h2>
+<h2>2. How We Use Your Information</h2>
 
-<p>Collected information is used to:</p>
+<p>
+
+We use the collected information to:
+
+</p>
 
 <ul>
 
 <li>Authenticate users securely.</li>
 
-<li>Manage schools and classrooms.</li>
+<li>Manage school administration.</li>
 
-<li>Store attendance records.</li>
+<li>Record and maintain attendance.</li>
 
-<li>Improve application performance.</li>
+<li>Improve platform performance.</li>
+
+<li>Provide customer support.</li>
 
 <li>Maintain platform security.</li>
 
@@ -177,8 +283,8 @@ These services securely process and store application data.
 
 <p>
 
-We use industry-standard security measures to protect your information
-from unauthorized access, alteration, disclosure, or destruction.
+We implement industry-standard security measures to protect your
+information against unauthorized access, modification, or disclosure.
 
 </p>
 
@@ -186,9 +292,9 @@ from unauthorized access, alteration, disclosure, or destruction.
 
 <p>
 
-SHALATRACK does not sell, trade, or rent user information.
+SHALATRACK does not sell, trade, or rent your personal information.
 
-Your information is used only to provide School ERP services.
+Data is used solely to provide school management services.
 
 </p>
 
@@ -201,23 +307,19 @@ and teachers.
 
 </p>
 
-<h2>7. Changes to this Policy</h2>
+<h2>7. Changes to this Privacy Policy</h2>
 
 <p>
 
-We may update this Privacy Policy periodically.
+This Privacy Policy may be updated from time to time.
 
-Changes will be published on this page.
+Any changes will be published on this page.
 
 </p>
 
 <h2>8. Contact Us</h2>
 
-<p>
-
-If you have any questions regarding this Privacy Policy, please contact us.
-
-</p>
+<div class="contact-box">
 
 <p>
 
@@ -231,21 +333,66 @@ support@shalatrack.in
 
 <strong>Website:</strong>
 
+<a href="https://shalatrackweb.vercel.app">
+
 https://shalatrackweb.vercel.app
+
+</a>
 
 </p>
 
 </div>
 
+</div>
+
+<!-- FOOTER -->
+
 <footer>
 
-<p>
+<div>
 
-© 2026 SHALATRACK • School ERP System
+<h2>SHALATRACK</h2>
+
+<p>Smart Attendance. Smarter Schools.</p>
+
+<div class="footer-links">
+
+<a href="index.html">Home</a>
+
+<a href="features.html">Features</a>
+
+<a href="pricing.html">Pricing</a>
+
+<a href="about.html">About</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="privacy-policy.html">Privacy Policy</a>
+
+</div>
+
+<p style="margin-top:25px;">
+
+© 2026 SHALATRACK. All Rights Reserved.
 
 </p>
 
+</div>
+
 </footer>
 
+<script>
+
+function toggleMenu() {
+
+const nav=document.getElementById("nav-links");
+
+nav.classList.toggle("active");
+
+}
+
+</script>
+
 </body>
+
 </html>
