@@ -187,12 +187,22 @@ footer {
   padding: 30px;
 }
 
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 /* ANIMATIONS */
 @keyframes fadeUp {
   from {
     opacity: 0;
     transform: translateY(40px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -200,16 +210,27 @@ footer {
 }
 
 @keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* RESPONSIVE */
 
 /* TABLET */
 @media (max-width: 1024px) {
-  .hero, .split, .cta {
+
+  .hero,
+  .split,
+  .cta {
     flex-direction: column;
     text-align: center;
   }
@@ -265,9 +286,9 @@ footer {
   .cta {
     padding: 40px 20px;
   }
-
 }
-/* ABOUT HERO (centered) */
+
+/* ABOUT HERO */
 .hero {
   text-align: center;
 }
@@ -316,7 +337,7 @@ footer {
   margin-bottom: 30px;
 }
 
-/* TEAM CARDS (reuse testimonial style but improved) */
+/* TEAM CARDS */
 .test-card {
   transition: 0.3s;
 }
@@ -356,6 +377,7 @@ footer {
   }
 
 }
+
 /* FEATURES SECTION */
 .features-section {
   padding: 60px;
@@ -395,12 +417,15 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
+
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
 }
 
 @media (max-width: 768px) {
+
   .features-grid {
     grid-template-columns: 1fr;
   }
@@ -408,7 +433,9 @@ footer {
   .features-section {
     padding: 40px 20px;
   }
+
 }
+
 /* CONTACT SECTION */
 .contact-section {
   padding: 60px;
@@ -472,6 +499,7 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+
   .contact-box {
     flex-direction: column;
     padding: 20px;
@@ -480,7 +508,9 @@ footer {
   .contact-section {
     padding: 40px 20px;
   }
+
 }
+
 /* PRICING */
 .pricing {
   display: flex;
@@ -539,10 +569,13 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+
   .pricing {
     padding: 40px 20px;
   }
+
 }
+
 /* HAMBURGER */
 .menu-toggle {
   display: none;
@@ -578,4 +611,154 @@ footer {
   #nav-links.active {
     display: flex;
   }
+
+}
+
+
+/* =========================================================
+   TERMS & CONDITIONS PAGE
+   ========================================================= */
+
+.terms-hero {
+  background: #f5f9ff;
+  padding: 70px 20px 40px;
+  text-align: center;
+}
+
+.terms-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.terms-label {
+  display: inline-block;
+  color: #1565c0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.terms-hero h1 {
+  color: #0d47a1;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.terms-hero p {
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 8px;
+}
+
+.terms-hero .updated {
+  color: #777;
+  font-size: 13px;
+}
+
+
+/* TERMS CONTENT */
+
+.terms-content {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px 30px 80px;
+}
+
+.terms-content section {
+  background: white;
+  padding: 30px;
+  margin-bottom: 22px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.terms-content h2 {
+  color: #0d47a1;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.terms-content p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.terms-content ul {
+  margin: 10px 0 15px 25px;
+  color: #555;
+}
+
+.terms-content li {
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+.terms-content a {
+  color: #1565c0;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.terms-content a:hover {
+  text-decoration: underline;
+}
+
+
+/* TERMS FOOTER */
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* TERMS MOBILE */
+
+@media (max-width: 768px) {
+
+  .terms-hero {
+    padding: 50px 20px 30px;
+  }
+
+  .terms-hero h1 {
+    font-size: 30px;
+  }
+
+  .terms-content {
+    padding: 30px 15px 50px;
+  }
+
+  .terms-content section {
+    padding: 22px;
+  }
+
+  .terms-content h2 {
+    font-size: 19px;
+  }
+
+  .terms-content p,
+  .terms-content li {
+    font-size: 14px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
 }
